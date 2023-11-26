@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>JAVASCRIPT PROGRAMMING</h2>
+    <p id="demo">javascript can change the style of an html element.</p>
+    <p id="demo"style="display:none">hello javascript</p>
+     <p id="pixe"> hello world!</p>
+     <button type="button" onclick="myFunc()"> change value</button>
+    <form>
+        <input type="text" name="firstname" id="firstname">
+        <button type="button"onclick="getvalue()"> get value</button>
+    </form>
+
+    <form onsubmit="return validate()">
+        <input type="text" name="firstname">
+        <input type="submit">
+    </form>
+    <button type="button" onclick="document.getElementById('demo').style.fontsize='35px'">click Me!</button>
+    <button type="button" onclick="show_and_hide()">click Me!</button>
+    <div id="fintel" style="width: 200px; height: 200px; background-color: teal;">hello world!</div>
+    
+    <button onclick="toggleFunction()">toggleFunction</button>
+    <div id="functionContent">
+        <p>this is the function's content.</p>
+        <p>it will be shown or hidden based on the button click</p>
+    </div>
+
+    <script>
+        function greetUser(){
+            var time = new Date().gethours();
+            if (time < 11) {
+                return "Good morning";
+            } else if (time < 18) {
+                return "Good day"
+            } else {
+                return "Good evening";
+            }
+        }
+        function getvalue(){
+            var val= document.getElementById("firstname").value;
+            alert("the value is" +val);
+        }
+        function validate(){
+            var firstname= document.getElementsByName("firstname")[0].value;
+            if (firstname == "") {
+                alert("form cannot be empty!!");
+                return false;
+            }
+        }
+        function validate(){
+        var lengthfield= document.getElementsByName("lengthfield").value;
+         alert("length must be <10/>20")
+        }
+        function changeColor (element) {
+            var currentcolor = element.style.backgroundColor;
+            if(currentcolor == "red") {
+                element.style.backgroundColor = "green";
+            } else{
+                element.style.backgroundColor = "red";
+            }
+        }
+        function toggleFunction() {
+            var functionContent = document.getElementById("functionContent");
+            if (functionContent.style.display === "none") {
+                functionContent.display = "block";
+            } else{
+                functionContent.style.display = "none"
+            }
+        }
+        type="text/javascript">
+            function myFunc() {
+                document.getElementById("pixel").innerHTML = "hello everyone!";
+            }
+
+        function show() {
+            document.getElementById("fintel").style.display = "block";
+        }  
+        function hide() {
+            document.getElementById("fintel").style.display = "none";
+        }   
+
+     </script>
+     <style>
+        #functionContent {
+            display: none;
+        }
+     </style>
+</body>
+</html>

@@ -1,0 +1,32 @@
+.title{
+    color: black;
+}
+
+.subtitle{
+    color: fuchsia;
+}
+
+.sub2title{
+    color: forestgreen;
+}
+
+.Image,.Image1,.Image2,.Image3{
+    height: 60px;
+    width: 60px;
+}
+
+.pixel{
+    background-color: rgb(87, 184, 201);
+}
+
+.content{
+    color:black ;
+}
+
+.flex-container{
+    display: flex;
+}
+.navigation{
+    display: grid;
+    grid-auto-flow: column;
+}
