@@ -100,7 +100,7 @@ body {
     transform: translate(-50%, -50%);
     width: 75%;
     height: 550px;
-    background: url('cardano-blockchain-platform.jpg') no-repeat;
+    background: url('media/cardano-blockchain-platform.jpg') no-repeat;
     background-size: cover;
     background-position: center;
     border-radius: 10px;
