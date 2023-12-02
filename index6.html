@@ -3,43 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>website</title>
+    <title>Sign Up form</title>
     <link rel="stylesheet" href="style6.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'rel='stylesheet'>
 </head>
 <body>
-    <div class="logreg-box">
-        <div class="form-box login">
-            <form action="#">
-                <h2>Sign up</h2>
-
-                <div class="input-box">
-                    <span class="icon"><i class='bx bxs-user'></i></span>
-                    <input type="text" required>
-                    <label>Name</label>
-                 </div>
-
-             <div class="input-box">
-                <span class="icon"><i class='bx bxs-envelope'></i></span>
-                <input type="email" required>
-                <label>Email</label>
-             </div>
-
-             <div class="input-box">
-                <span class="icon"><i class='bx bxs-lock-alt' ></i></span>
-                <input type="password" required>
-                <label>Password</label>  </div>
-
-                <div class="remember-forget">
-                   <label><input type="checkbox"> I agree to the terms & conditions</label>
-                </div>
-
-                <button type="submit" class="btn">Sign up</button>
-
-                <div class="login-register">
-                   <p>Already have an account?<a href="#"class="login-iink"> Sign in</a></p>
-               </div>
-           </form>
-        </div>
+    <div class="sign-up-form">
+        <h1>Sign Up Now</h1>
+        <form>
+            <input type="email" class="input-box" placeholder="your email">
+            <input type="email" class="input-box" placeholder="password">
+            <p><span><input type="checkbox"></span>I agree to the terms and conditions</p>
+        </form>
+        <button type ="button" class="signup-btn">sign up</button>
+        <hr>
+        <p class="or">OR</p>
+        <button type ="button" class="signup-btn">login with google</button>
 </body>
 </html>
