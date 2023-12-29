@@ -93,7 +93,6 @@
     background: url('../media/cardano-blockchain-platform.jpg') no-repeat;
     background-size: cover;
     background-position: center;
-    filter: blur(10px);
     
 }
 
@@ -147,6 +146,7 @@
     width: 90px;
     border-radius: 2px;
     cursor: pointer;
+    margin-block: 15px;
     margin-right: 8px;
     transition: opacity 0.15s;
 }
