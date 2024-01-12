@@ -140,12 +140,14 @@
 
 .suscribe-button {
     background-color: aquamarine;
-    color: white;
+    color: black;
+    text-decoration: none;
     border: none;
     height: 20px;
     width: 90px;
     border-radius: 2px;
     cursor: pointer;
+    padding: 0.6rem 5rem 1.5rem 1rem;
     margin-block: 15px;
     margin-right: 8px;
     transition: opacity 0.15s;
@@ -155,8 +157,8 @@
     transform: scale(1.2);
 }
 
-.suscribe-button:active {
-    opacity: 0.5;
+.suscribe-button:active{
+    opacity: 0.5s;
 }
 
 .social-icons a i {
@@ -168,4 +170,111 @@
 
 .social-icons a:hover i {
     transform: scale(1.2);
+}
+
+@media (min-width: 390px) and (max-width: 844px){
+    .navbar {
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .search-bar{
+        width: 70%;
+        float: left;
+    }
+
+    .logo{
+        display: inline-flex;
+        margin-bottom: px;
+        margin: -30px -80px;
+    }
+
+    .text-sci h1 {
+        margin: 120px -70px 0 -70px;
+        line-height: 1;
+    }
+
+    .text-sci p{
+        margin: 20px -70px;
+    }
+
+    .suscribe-button{
+        margin: 20px -70px;
+    }
+
+    .social-icons a i{
+        margin: 5px -30px 0 -17px;
+        flex-direction: row-reverse;
+    }
+}
+
+@media (min-width: 360px) and (max-width:740px){
+    .navbar {
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .search-bar{
+        width: 70%;
+        float: left;
+    }
+
+    .logo{
+        display: inline-flex;
+        margin-bottom: px;
+        margin: -30px -80px;
+    }
+
+    .text-sci h1 {
+        margin: 100px -70px 0 -70px;
+        line-height: 1;
+    }
+
+    .text-sci p{
+        margin: 30px -70px;
+    }
+
+    .suscribe-button{
+        margin: 10px -70px;
+    }
+
+    .social-icons a i{
+        margin: 5px -30px 0 -15px;
+        flex-direction: row-reverse;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 533px){
+.navbar {
+    flex-direction: row;
+    width: 100%;
+}
+
+.search-bar{
+    width: 70%;
+    float: left;
+}
+
+.logo{
+    display: inline-flex;
+    margin: 20px -80px;
+}
+
+.text-sci h1 {
+    margin: 10px -70px 0 -70px;
+    line-height: 1;
+}
+
+.text-sci p{
+    margin: 20px -70px;
+}
+
+.suscribe-button{
+    margin: 20px -70px;
+}
+
+.social-icons a i{
+    margin: 5px -30px 0 -17px;
+    flex-direction: row;
+}
 }
