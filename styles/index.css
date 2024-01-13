@@ -274,7 +274,7 @@
 }
 
 .social-icons a i{
+    display: inline-flex;
     margin: 5px -30px 0 -17px;
-    flex-direction: row;
 }
 }
