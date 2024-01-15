@@ -133,3 +133,27 @@ body{
 .register-link p a:hover{
     text-decoration: underline;
 }
+
+@media (min-width: 360px) and (max-width: 800px){
+    .wrapper{
+        width: 320px;
+        padding: 10px 20px 10px 10px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 568px){
+    .wrapper{
+        width: 320px;
+        padding: 10px 20px 10px 10px;
+        margin-top: 10px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px){
+    .wrapper{
+        width: 550px;
+        padding: 10px 20px 10px 10px;
+        margin-bottom: 20px;
+    }
+}
